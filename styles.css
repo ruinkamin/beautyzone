@@ -1,0 +1,222 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v49-latin-regular.woff2') format('woff2');
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v49-latin-500.woff2') format('woff2');
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v49-latin-700.woff2') format('woff2');
+}
+
+/* roboto-900 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v49-latin-900.woff2') format('woff2');
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+
+/* play-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v21-latin-regular.woff2') format('woff2');
+}
+
+:root {
+    --bakery-landing-1-background: #faf4ea;
+    --bakery-landing-1-s1: #31261a;
+    --bakery-landing-1-c2: #819b57;
+    --bakery-landing-1-s3: #465929;
+    --bakery-landing-1-s4: #a18268;
+    --bakery-landing-1-c5: #cfcfbc;
+    --beauty-landing-2-background: #fff;
+    --beauty-landing-2-s2: #2b7fff;
+    --beauty-landing-2-c1: #011c44;
+    --beauty-landing-2-c3: #4a4a4a;
+    --beauty-landing-2-s4: #ffd02b;
+    --beauty-landing-2-s5: #747272;
+    --beauty-landing-2-c6: #011f4a;
+    --dog-landing-3-background: #fff;
+    --dog-landing-3-s1: #ff9f0e;
+    --dog-landing-3-s2: #fcb62a;
+    --dog-landing-3-c3: #fffaf3;
+    --dog-landing-3-c4: #181817;
+    --dog-landing-3-c5: #f1f3ff;
+    --dog-landing-3-c6: #839aa9;
+    --dog-landing-3-s8: #f9f9ff;
+    --dog-landing-3-c9: #d9a6ff;
+    --dog-landing-3-c10: #ff6e9f;
+}
+
+:root {
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Poppins", sans-serif;
+    --third-family: "Play", sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--beauty-landing-2-c1);
+}
+
+span {
+    color: var(--beauty-landing-2-s2);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1288px;
+    padding: 24px;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    flex-direction: row;
+}
+
+.link {
+    flex-direction: row;
+}
+
+/* main */
+.titel-name {
+    text-align: center;
+}
+/* beauty zone */
+
+.hero-titel {
+    color: var(--beauty-landing-2-s2);
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 81%;
+    text-transform: capitalize;
+}
+
+.call-button {
+    border-radius: 32px;
+    padding: 16px 32px;
+    width: 219px;
+    height: 53px;
+    background: var(--beauty-landing-2-s2);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--beauty-landing-2-background);
+} 
+
+.free-consultaition {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--primary-dark-color);
+}
+
+/* Перевтілюйтесь в beauty zone ! */
+
+.span-name {
+    color: var(--color-brand);
+    text-transform: capitalize;
+}
+
+.check {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 173%;
+    color: var(--beauty-landing-2-c1);
+}
+
+.span-bold {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--beauty-landing-2-c1);
+}
+
+ /* Чому люди обирають нас  */
+.list-block {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: #000;
+}
+
+/* Наші процедури */
+.procedures {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 118%;
+    text-align: center;
+    color: var(--primary-dark-color);
+}
+
+/* Як нас знайти */
+.regisration {
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--primary-dark-color);
+}
+
+.signup-free {
+    border-radius: 32px;
+    padding: 16px 32px;
+    width: 281px;
+    height: 53px;
+    background-color: var(--color-brand);
+}
+
+.confidential {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--beauty-landing-2-s5);
+}
