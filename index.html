@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <body class="container">
+  <body class="main-container">
     <header class="header">
       <div class="header-container">
         <nav>
@@ -36,13 +36,15 @@
     <main>
       <!-- beauty zone -->
       <section>
-        <div>
-          <p>Косметологічна клініка</p>
+        <div class="hero">
+          <p class="cosm-cl">Косметологічна клініка</p>
           <h1 class="hero-titel">beauty zone</h1>
-          <button class="call-button" type="button">Замовити дзвінок</button>
-          <p class="free-consultaition">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
-          </p>
+          <div class="butt-text">
+            <button class="call-button" type="button">Замовити дзвінок</button>
+            <p class="free-consultaition">
+              Запишись та отримай безкоштовну консультацію нашого косметолога
+            </p>
+          </div>
         </div>
       </section>
       <!-- Перевтілюйтесь в beauty zone! -->
@@ -67,23 +69,27 @@
       <section>
         <div>
           <h2 class="titel-name">Чому люди <span>обирають нас</span></h2>
-          <ul>
-            <li>
-              <img src="./img/icon1.png" alt="Освіта та стаж" />
+          <ul class="choose-blocks">
+            <li class="why-choosing">
+              <img
+                class="choose-item"
+                src="./img/icon1.png"
+                alt="Освіта та стаж"
+              />
               <p class="list-block">
                 Всі наші косметологи мають вищу медичну освіту та стаж роботи
                 від 5 років
               </p>
             </li>
-            <li>
-              <img src="./img/icon2.png" alt="Обладнання" />
+            <li class="why-choosing">
+              <img class="choose-item" src="./img/icon2.png" alt="Обладнання" />
               <p class="list-block">
                 Використовуємо тільки професійне обладнання та косметику,
                 перевірену часом
               </p>
             </li>
-            <li>
-              <img src="./img/icon3.png" alt="Мета" />
+            <li class="why-choosing">
+              <img class="choose-item" src="./img/icon3.png" alt="Мета" />
               <p class="list-block">
                 Наша мета - підкреслити переваги та приховати недоліки, а не
                 переробити
@@ -96,42 +102,52 @@
       <section>
         <div>
           <h2 class="titel-name">Наші <span>процедури</span></h2>
-          <article>
-            <div><p class="procedures">Маски для обличчя</p></div>
-          </article>
-          <article>
-            <div><p class="procedures">Ін'єкції для обличчя</p></div>
-          </article>
-          <article>
-            <div><p class="procedures">Очищення обличчя</p></div>
-          </article>
+          <div class="proc">
+            <article>
+              <div class="procedures">
+                <p class="text-proc">Маски для обличчя</p>
+              </div>
+            </article>
+            <article>
+              <div class="procedures">
+                <p class="text-proc">Ін'єкції для обличчя</p>
+              </div>
+            </article>
+            <article>
+              <div class="procedures">
+                <p class="text-proc">Очищення обличчя</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
       <!-- Як нас знайти -->
       <section>
         <div>
           <h2 class="titel-name">Як нас <span>знайти</span></h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e0!3m2!1suk!2sua!4v1763553362856!5m2!1suk!2sua"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <h3 class="regisration">
-            Запишіться <span>безкоштовно</span> та отримайте подарунок
-          </h3>
-          <p>Ваше ім'я та прізвище</p>
-          <p>Ваш номер телефону</p>
-          <p>Ваша електронна пошта</p>
-          <button class="signup-free" type="button">
-            Записатись безкоштовно
-          </button>
-          <p class="confidential">
-            Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
-          </p>
+          <div class="find">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e0!3m2!1suk!2sua!4v1763553362856!5m2!1suk!2sua"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="sign-info">
+              <h3 class="regisration">
+                Запишіться <span>безкоштовно</span> та отримайте подарунок
+              </h3>
+              <p class="input-info">Ваше ім'я та прізвище</p>
+              <p class="input-info">Ваш номер телефону</p>
+              <p class="input-info">Ваша електронна пошта</p>
+              <button class="signup-free" type="button">
+                Записатись безкоштовно
+              </button>
+              <p class="confidential">
+                Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -139,20 +155,31 @@
     <footer class="container">
       <div>
         <nav>
-          <a href="#"> Beauty Zone</a>
+          <a href="#" class="footername-link"> Beauty zone</a>
           <ul>
-            <li><a href="">Про нас</a></li>
-            <li><a href="">Чому ми</a></li>
-            <li><a href="">Наші процедури</a></li>
-            <li><a href="">Контакти</a></li>
+            <li><a href="" class="footer-nav-address">Про нас</a></li>
+            <li><a href="" class="footer-nav-address">Чому ми</a></li>
+            <li><a href="" class="footer-nav-address">Наші процедури</a></li>
+            <li><a href="" class="footer-nav-address">Контакти</a></li>
           </ul>
         </nav>
         <address>
           <ul>
-            <li><a href="tel:380960000007">+ 38 (096) 000 00 07</a></li>
-            <li><a href="mailto:beautyzone@gmail.com"></a></li>
             <li>
-              <a href="https://maps.app.goo.gl/PLLHdLu9GjCeGi829"
+              <a href="tel:380960000007" class="footer-nav-address"
+                >+ 38 (096) 000 00 07</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:beautyzone@gmail.com"
+                class="footer-nav-address"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/PLLHdLu9GjCeGi829"
+                class="footer-nav-address"
                 >Україна, м. Київ, вул. Тараса Шевченка 5</a
               >
             </li>
@@ -166,8 +193,10 @@
           <button>
             <img src="./img/instagram.svg" alt="instagram" />
           </button>
-          <a href="#" target="_blank">Політика конфіденційності</a>
-          <p>&copy; 2022 Дані захищені</p>
+          <a href="#" target="_blank" class="footer-nav-address"
+            >Політика конфіденційності</a
+          >
+          <p class="data">&copy; 2022 Дані захищені</p>
         </address>
       </div>
     </footer>
