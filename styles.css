@@ -112,6 +112,10 @@ span {
     padding: 24px;
 }
 
+.container {
+    width: 100%;
+}
+
 /* Header */
 .header-container {
     display: flex;
@@ -126,11 +130,32 @@ span {
     flex-direction: row;
 }
 
+.section-class {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1288px;
+    padding: 24px;
+}
+
+.bc-img {
+    background-image: url('./img/bc-sec1.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    /* background: url('./img/bc-sec1.jpg') no-repeat righttop cover fixed; */
+
+}
+
 /* main */
 .titel-name {
     text-align: center;
 }
 /* beauty zone */
+
+
 
 .hero {
     width: 529px;
@@ -148,6 +173,7 @@ span {
     font-weight: 700;
     font-size: 140px;
     line-height: 81%;
+    margin: 16px 0px;
     text-transform: capitalize;
     color: var(--beauty-landing-2-s2);
 }
@@ -155,6 +181,8 @@ span {
 .butt-text {
     width: 238px;
     height: 103px;
+    margin: 40px 0px;
+    text-align: center;
 }
 
 .call-button {
@@ -168,7 +196,9 @@ span {
     font-size: 18px;
     color: var(--beauty-landing-2-background);
     border-style: hidden;
+    cursor: pointer;
 }
+
 
 .free-consultaition {
     font-family: var(--font-family);
@@ -201,6 +231,11 @@ span {
 
  /* Чому люди обирають нас  */
 
+ .why-people-choosing {
+    background-image: linear-gradient(#2b7fff 33.47%, rgba(43, 127, 255, 0) 63.46%, rgba(43, 127, 255, 0) 89.47%);
+    
+ }
+
  .choose-blocks {
     display: flex;
     flex-direction: row; 
@@ -225,26 +260,44 @@ span {
     margin: 24px 32px;
 }
 
-.choose-item {
+.choose-item { 
     display: flex;
     margin: 0 auto;
 }
 
 /* Наші процедури */
 
-.proc {
-    display: flex;
-    flex-direction: row;
-}
-
 .procedures {
     display: flex;
-    margin: 16px;
-    width: 344px;
-    height: 456px;    
-    
-    align-items: flex-end;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.carusl-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    padding: 0px;
+    border: 1px solid var(--beauty-landing-2-c1);
+    border-radius: 50%;
+    cursor: pointer;
+    fill: var(--beauty-landing-2-c1)
+}
+
+.carusl-button:hover {
+    background-color: var(--beauty-landing-2-s2);
+    border: var(--beauty-landing-2-s2);
+    fill: var(--beauty-landing-2-background);
+}
+
+.proc-text {
+    width: 152px;
+    height: 52px;
     text-align: center;
+    margin: 40px;
 }
 
 .text-proc {
@@ -253,8 +306,51 @@ span {
     font-size: 22px;
     line-height: 118%;
     text-align: center;
-    color: #000;
-    /* color: var(--beauty-landing-2-background); */
+    color: var(--beauty-landing-2-background);
+}
+
+.procedures-fir {
+    background-image: url('./img/proc1.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    width: 344px;
+    height: 456px;
+    display: flex;
+    margin: 16px;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 4px 120px;
+    /* background-image: linear-gradient(#FFFFFF, #011C44); */
+}
+
+.procedures-sec {
+    background-image: url('./img/proc2.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    display: flex;
+    margin: 16px;
+    width: 344px;
+    height: 456px;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 4px 120px;
+    /* background-image: linear-gradient(#FFFFFF, #011C44); */
+}
+
+.procedures-thir {
+    background-image: url('./img/proc3.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    display: flex;
+    margin: 16px;
+    width: 344px;
+    height: 456px;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 4px 120px;
 }
 
 /* Як нас знайти */
@@ -280,6 +376,7 @@ span {
     height: 482px;
     background: var(--beauty-landing-2-c1);
     padding: 32px;
+    box-shadow: -5px 0 0 0 #fff, -10px 0 0 0 var(--beauty-landing-2-c6)
 }
 
 .map {
@@ -297,6 +394,7 @@ span {
     height: 53px;
     background: var(--beauty-landing-2-s2);
     border-style: hidden;
+    cursor: pointer;
 }
 
 .confidential {
@@ -325,7 +423,7 @@ span {
 
 /* footer */
 footer {
-    background: var(--beauty-landing-2-c1);   
+    background: var(--beauty-landing-2-c1);
 }
 
 .footername-link {
@@ -349,4 +447,13 @@ footer {
     font-weight: 400;
     font-size: 13px;
     color: var(--beauty-landing-2-s5);
+}
+
+.adress-icon {
+    fill: var(--beauty-landing-2-background);
+    /* stroke: #2b7fff; */
+}
+
+.footer-img {
+    float: right;
 }

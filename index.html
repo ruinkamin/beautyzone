@@ -9,33 +9,37 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <body class="main-container">
-    <header class="header">
-      <div class="header-container">
-        <nav>
-          <a href="./index.html"> Beauty Zone</a>
-          <ul>
-            <li><a class="link" href="" target="_blank">Чому ми</a></li>
-            <li><a class="link" href="" target="_blank">Наші процедури</a></li>
-            <li><a class="link" href="" target="_blank">Контакти</a></li>
-            <li><a class="link" href="" target="_blank">Про нас</a></li>
-          </ul>
-        </nav>
-        <button>
-          <img src="./img/phone.svg" alt="виклик" />
-        </button>
-        <button>
-          <img src="./img/facebook.svg" alt="facebook" />
-        </button>
-        <button>
-          <img src="./img/instagram.svg" alt="instagram" />
-        </button>
-      </div>
-    </header>
-
+  <body>
+    <div class="bc-img">
+      <div>
+      <header class="header">
+        <div class="header-container main-container">
+          <nav>
+            <a href="./index.html"> Beauty Zone</a>
+            <ul>
+              <li><a class="link" href="" target="_blank">Чому ми</a></li>
+              <li>
+                <a class="link" href="" target="_blank">Наші процедури</a>
+              </li>
+              <li><a class="link" href="" target="_blank">Контакти</a></li>
+              <li><a class="link" href="" target="_blank">Про нас</a></li>
+            </ul>
+          </nav>
+            <svg width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <svg width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+            <svg width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-inst"></use>
+            </svg>
+        </div>
+      </header>
+    
     <main>
       <!-- beauty zone -->
-      <section>
+      <section class="beauty-zone section-class">
         <div class="hero">
           <p class="cosm-cl">Косметологічна клініка</p>
           <h1 class="hero-titel">beauty zone</h1>
@@ -47,8 +51,10 @@
           </div>
         </div>
       </section>
+    </div>
+  </div>
       <!-- Перевтілюйтесь в beauty zone! -->
-      <section>
+      <section class="main-container">
         <div>
           <h2>Перевтілюйтесь в <span class="span-name">beauty zone!</span></h2>
           <p class="check">
@@ -66,32 +72,34 @@
         </div>
       </section>
       <!-- Чому люди обирають нас -->
-      <section>
-        <div>
+      <section class="main-container">
+        <div class="why-people-choosing">
           <h2 class="titel-name">Чому люди <span>обирають нас</span></h2>
           <ul class="choose-blocks">
             <li class="why-choosing">
-              <img
-                class="choose-item"
-                src="./img/icon1.png"
-                alt="Освіта та стаж"
-              />
+              <svg width="48" height="48" class="choose-item">
+                <use href="./img/symbol-defs.svg#icon-game"></use>
+              </svg>
               <p class="list-block">
                 Всі наші косметологи мають вищу медичну освіту та стаж роботи
                 від 5 років
               </p>
             </li>
             <li class="why-choosing">
-              <img class="choose-item" src="./img/icon2.png" alt="Обладнання" />
+              <svg width="48" height="48" class="choose-item">
+                <use href="./img/symbol-defs.svg#icon-cosmetics"></use>
+              </svg>
               <p class="list-block">
                 Використовуємо тільки професійне обладнання та косметику,
                 перевірену часом
               </p>
             </li>
             <li class="why-choosing">
-              <img class="choose-item" src="./img/icon3.png" alt="Мета" />
+              <svg width="48" height="48" class="choose-item">
+                <use href="./img/symbol-defs.svg#icon-crown"></use>
+              </svg>
               <p class="list-block">
-                Наша мета - підкреслити переваги та приховати недоліки, а не
+                Наша мета - підкреслити переваги та приховати недоліки, a не
                 переробити
               </p>
             </li>
@@ -99,30 +107,43 @@
         </div>
       </section>
       <!-- Наші процедури -->
-      <section>
+      <section class="main-container">
         <div>
           <h2 class="titel-name">Наші <span>процедури</span></h2>
-          <div class="proc">
+          <div class="procedures">
+            <button class="carusl-button" type="button">
+            <svg width="16" height="16">
+              <use href="./img/symbol-defs.svg#icon-Arrow"></use>
+            </svg>
+          </button>
             <article>
-              <div class="procedures">
-                <p class="text-proc">Маски для обличчя</p>
+              <div class="procedures-fir">
+                <div class="proc-text">
+                <p class="text-proc">Маски для обличчя</p></div>
               </div>
             </article>
             <article>
-              <div class="procedures">
-                <p class="text-proc">Ін'єкції для обличчя</p>
+              <div class="procedures-sec">
+                <div class="proc-text">
+                <p class="text-proc">Ін'єкції для обличчя</p></div>
               </div>
             </article>
             <article>
-              <div class="procedures">
-                <p class="text-proc">Очищення обличчя</p>
+              <div class="procedures-thir">
+                <div class="proc-text">
+                <p class="text-proc">Очищення обличчя</p></div>
               </div>
             </article>
+            <button class="carusl-button" type="button">
+            <svg width="16" height="16">
+              <use href="./img/symbol-defs.svg#icon-Arrow"></use>
+            </svg>
+          </button>
           </div>
         </div>
       </section>
       <!-- Як нас знайти -->
-      <section>
+      <section class="main-container">
         <div>
           <h2 class="titel-name">Як нас <span>знайти</span></h2>
           <div class="find">
@@ -133,6 +154,7 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+
             <div class="sign-info">
               <h3 class="regisration">
                 Запишіться <span>безкоштовно</span> та отримайте подарунок
@@ -153,7 +175,7 @@
     </main>
 
     <footer class="container">
-      <div>
+      <div class="section-class">
         <nav>
           <a href="#" class="footername-link"> Beauty zone</a>
           <ul>
@@ -179,25 +201,22 @@
             <li>
               <a
                 href="https://maps.app.goo.gl/PLLHdLu9GjCeGi829"
-                class="footer-nav-address"
-                >Україна, м. Київ, вул. Тараса Шевченка 5</a
-              >
+                class="footer-nav-address"> Україна, м. Київ, вул. Тараса Шевченка 5</a>
             </li>
           </ul>
-          <button>
-            <img src="./img/phone.svg" alt="виклик" />
-          </button>
-          <button>
-            <img src="./img/facebook.svg" alt="facebook" />
-          </button>
-          <button>
-            <img src="./img/instagram.svg" alt="instagram" />
-          </button>
+            <svg class="adress-icon" width="42" height="42">
+              <use href="./img/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <svg class="adress-icon" width="42" height="42">
+              <use href="./img/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+            <svg class="adress-icon" width="42" height="42">
+              <use href="./img/symbol-defs.svg#icon-inst"></use>
+            </svg>
           <a href="#" target="_blank" class="footer-nav-address"
-            >Політика конфіденційності</a
-          >
+            >Політика конфіденційності</a>
           <p class="data">&copy; 2022 Дані захищені</p>
-        </address>
+        <img class="footer-img" src="./img/footerimg.png" alt="">
       </div>
     </footer>
   </body>
