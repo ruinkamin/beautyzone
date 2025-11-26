@@ -14,9 +14,9 @@
       <div>
       <header class="header">
         <div class="header-container main-container">
-          <nav>
-            <a href="./index.html"> Beauty Zone</a>
-            <ul>
+          <nav class="nav">
+            <a class="hero-titel-icon" href="./index.html"> Beauty Zone</a>
+            <ul class="nav-q">
               <li><a class="link" href="" target="_blank">Чому ми</a></li>
               <li>
                 <a class="link" href="" target="_blank">Наші процедури</a>
@@ -111,7 +111,7 @@
         <div>
           <h2 class="titel-name">Наші <span>процедури</span></h2>
           <div class="procedures">
-            <button class="carusl-button" type="button">
+            <button class="carusl-button-left" type="button">
             <svg width="16" height="16">
               <use href="./img/symbol-defs.svg#icon-Arrow"></use>
             </svg>
@@ -134,7 +134,7 @@
                 <p class="text-proc">Очищення обличчя</p></div>
               </div>
             </article>
-            <button class="carusl-button" type="button">
+            <button class="carusl-button-rigth" type="button">
             <svg width="16" height="16">
               <use href="./img/symbol-defs.svg#icon-Arrow"></use>
             </svg>
@@ -176,8 +176,9 @@
 
     <footer class="container">
       <div class="section-class">
-        <nav>
+        <div class="nav-f">
           <a href="#" class="footername-link"> Beauty zone</a>
+        <nav>
           <ul>
             <li><a href="" class="footer-nav-address">Про нас</a></li>
             <li><a href="" class="footer-nav-address">Чому ми</a></li>
@@ -185,18 +186,20 @@
             <li><a href="" class="footer-nav-address">Контакти</a></li>
           </ul>
         </nav>
-        <address>
-          <ul>
+
+        <address class="adress-footer">
+          <ul class="ff">
             <li>
-              <a href="tel:380960000007" class="footer-nav-address"
-                >+ 38 (096) 000 00 07</a
-              >
+              <a href="tel:380960000007" class="footer-nav-address">
+                + 38 (096) 000 00 07
+              </a>
             </li>
             <li>
               <a
                 href="mailto:beautyzone@gmail.com"
-                class="footer-nav-address"
-              ></a>
+                class="footer-nav-address">
+                beautyzone@gmail.com
+              </a>
             </li>
             <li>
               <a
@@ -204,6 +207,7 @@
                 class="footer-nav-address"> Україна, м. Київ, вул. Тараса Шевченка 5</a>
             </li>
           </ul>
+          <div> 
             <svg class="adress-icon" width="42" height="42">
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
@@ -213,11 +217,16 @@
             <svg class="adress-icon" width="42" height="42">
               <use href="./img/symbol-defs.svg#icon-inst"></use>
             </svg>
+          </div>
+          </address>
+
+          <div>
           <a href="#" target="_blank" class="footer-nav-address"
             >Політика конфіденційності</a>
-          <p class="data">&copy; 2022 Дані захищені</p>
-        <img class="footer-img" src="./img/footerimg.png" alt="">
+          <p class="data">&copy; 2022 Дані захищені</p></div>
+        <!-- <img class="footer-img" src="./img/footerimg.png" alt=""> -->
       </div>
+    </div>
     </footer>
   </body>
 </html>

@@ -117,17 +117,50 @@ span {
 }
 
 /* Header */
+
 .header-container {
     display: flex;
     align-items: center;
 }
 
 .header {
+    display: flex;
     flex-direction: row;
+    background-color: var(--beauty-landing-2-background);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
+    height: 106px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-q {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero-titel-icon {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 95%;
+    text-transform: capitalize;
+    color: var(--beauty-landing-2-s2);
+    text-decoration: unset;
 }
 
 .link {
-    flex-direction: row;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--beauty-landing-2-c1);
+    margin: 56px;
+    text-decoration: unset;
 }
 
 .section-class {
@@ -271,9 +304,24 @@ span {
     display: flex;
     flex-direction: row;
     padding: 0px;
+    align-items: center;
 }
 
-.carusl-button {
+.carusl-button-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    padding: 0px;
+    border: 1px solid var(--beauty-landing-2-c1);
+    border-radius: 50%;
+    cursor: pointer;
+    fill: var(--beauty-landing-2-c1)
+}
+.carusl-button-rigth {
+    transform: rotate(180deg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,6 +490,10 @@ footer {
     color: var(--beauty-landing-2-background);
 }
 
+.ff {
+    padding: 0px;
+}
+
 .data {
     font-family: var(--font-family);
     font-weight: 400;
@@ -453,6 +505,20 @@ footer {
     fill: var(--beauty-landing-2-background);
     /* stroke: #2b7fff; */
 }
+
+.nav-f {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.adress-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
 
 .footer-img {
     float: right;
