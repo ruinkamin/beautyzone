@@ -324,8 +324,8 @@
         </div>
       </footer>
 
-      <!-- Модальне вікно -->
-      <div class="backdrop is-hidden">
+      <!-- Модальне вікно is-hidden -->
+      <div class="backdrop">
         <div class="modal">
           <div class="modal-in">
             <button class="modal-btn-close" type="button">
@@ -343,7 +343,6 @@
                 class="modal-container"
                 name="contact-form"
                 autocomplete="on"
-                novalidate
               >
                 <div class="label-form-div">
                   <input
@@ -351,6 +350,9 @@
                     name="user-name"
                     class="mod-write"
                     type="text"
+                    minlength="2"
+                    maxlength="20"
+                    required
                   />
                   <label class="form-label" for="user-name">
                     Ваше ім'я та прізвище
@@ -363,6 +365,9 @@
                     name="user-tel"
                     class="mod-write"
                     type="tel"
+                    pattern="^\+[0-9]{12}"
+                    placeholder=""
+                    required
                   />
                   <label class="form-label" for="user-tel">
                     Ваш номер телефону
@@ -375,9 +380,22 @@
                     name="user-email"
                     class="mod-write"
                     type="email"
+                    required
                   />
                   <label class="form-label" for="user-email">
                     Ваша електронна пошта
+                  </label>
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="terms-conditions"
+                    name="terms-conditions"
+                  />
+                  <label class="checkbox-label" for="terms-conditions">
+                    Погоджуюсь з політикою конфіденційності
                   </label>
                 </div>
 
