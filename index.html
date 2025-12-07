@@ -14,7 +14,10 @@
       <header class="header">
         <div class="header-container main-container">
           <nav class="nav">
-            <a class="hero-titel-icon" href="./index.html"> Beauty Zone</a>
+            <a class="hero-titel-icon" href="./index.html">
+              Beauty <br />
+              Zone</a
+            >
             <ul class="nav-q">
               <li><a class="link" href="" target="_blank">Чому ми</a></li>
               <li>
@@ -24,15 +27,23 @@
               <li><a class="link" href="" target="_blank">Про нас</a></li>
             </ul>
           </nav>
-          <svg width="32" height="32">
-            <use href="./img/symbol-defs.svg#icon-phone"></use>
-          </svg>
-          <svg width="32" height="32">
-            <use href="./img/symbol-defs.svg#icon-facebook"></use>
-          </svg>
-          <svg width="32" height="32">
-            <use href="./img/symbol-defs.svg#icon-inst"></use>
-          </svg>
+          <ul class="icon-use">
+            <li>
+              <svg width="32" height="32">
+                <use href="./img/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="32" height="32">
+                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="32" height="32">
+                <use href="./img/symbol-defs.svg#icon-inst"></use>
+              </svg>
+            </li>
+          </ul>
         </div>
       </header>
 
@@ -55,12 +66,12 @@
             </div>
           </section>
         </div>
-
         <!-- Перевтілюйтесь в beauty zone! -->
         <section class="main-container">
           <div>
             <h2>
-              Перевтілюйтесь в <span class="span-name">beauty zone!</span>
+              Перевтілюйтесь<br />
+              в <span class="span-name">beauty zone!</span>
             </h2>
             <p class="check">
               Наша косметологічна клініка пропонує вам професійні послуги з
@@ -79,7 +90,10 @@
         <!-- Чому люди обирають нас -->
         <section class="main-container">
           <div class="why-people-choosing">
-            <h2 class="titel-name">Чому люди <span>обирають нас</span></h2>
+            <h2 class="titel-name">
+              Чому люди <br />
+              <span>обирають нас</span>
+            </h2>
             <ul class="choose-blocks">
               <li class="why-choosing">
                 <svg width="48" height="48" class="choose-item">
@@ -164,18 +178,64 @@
               ></iframe>
 
               <div class="sign-info">
-                <h3 class="regisration">
-                  Запишіться <span>безкоштовно</span> та отримайте подарунок
-                </h3>
-                <p class="input-info">Ваше ім'я та прізвище</p>
-                <p class="input-info">Ваш номер телефону</p>
-                <p class="input-info">Ваша електронна пошта</p>
-                <button class="signup-free" type="button">
-                  Записатись безкоштовно
-                </button>
-                <p class="confidential">
-                  Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+                <p class="sign-free-t">
+                  Запишіться <span> безкоштовно</span> та отримайте подарунок
                 </p>
+
+                <form
+                  class="modal-container"
+                  name="contact-form"
+                  autocomplete="on"
+                  novalidate
+                >
+                  <div class="label-form-div">
+                    <input
+                      id="user-name"
+                      name="user-name"
+                      class="mod-write"
+                      type="text"
+                    />
+                    <label class="form-label" for="user-name">
+                      Ваше ім'я та прізвище
+                    </label>
+                  </div>
+
+                  <div class="label-form-div">
+                    <input
+                      id="user-tel"
+                      name="user-tel"
+                      class="mod-write"
+                      type="tel"
+                    />
+                    <label class="form-label" for="user-tel">
+                      Ваш номер телефону
+                    </label>
+                  </div>
+
+                  <div class="label-form-div">
+                    <input
+                      id="user-email"
+                      name="user-email"
+                      class="mod-write"
+                      type="email"
+                    />
+                    <label class="form-label" for="user-email">
+                      Ваша електронна пошта
+                    </label>
+                  </div>
+
+                  <div class="m-butplinf">
+                    <button class="m-button" type="submit">
+                      Записатись безкоштовно
+                    </button>
+                    <p class="conf">
+                      Натискаючи на кнопку я погоджуюсь з
+                      <a class="link-conf" href="#">
+                        політикою конфіденційності
+                      </a>
+                    </p>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -185,9 +245,12 @@
       <footer class="footer container">
         <div class="section-class">
           <div class="nav-f">
-            <a href="#" class="footername-link"> Beauty zone</a>
+            <a href="#" class="footername-link">
+              Beauty <br />
+              zone</a
+            >
             <nav>
-              <ul>
+              <ul class="footer-list">
                 <li><a href="" class="footer-nav-address">Про нас</a></li>
                 <li><a href="" class="footer-nav-address">Чому ми</a></li>
                 <li>
@@ -197,8 +260,8 @@
               </ul>
             </nav>
 
-            <address class="adress-footer">
-              <ul class="ff">
+            <address class="adress-footer footer-list">
+              <ul class="ff footer-list">
                 <li>
                   <a href="tel:380960000007" class="footer-nav-address">
                     + 38 (096) 000 00 07
@@ -222,15 +285,32 @@
                 </li>
               </ul>
               <div>
-                <svg class="adress-icon" width="42" height="42">
-                  <use href="./img/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                <svg class="adress-icon" width="42" height="42">
-                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-                <svg class="adress-icon" width="42" height="42">
-                  <use href="./img/symbol-defs.svg#icon-inst"></use>
-                </svg>
+                <ul class="icon-use">
+                  <li>
+                    <svg width="32" height="32">
+                      <use
+                        class="adress-icon"
+                        href="./img/symbol-defs.svg#icon-phone"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="32" height="32">
+                      <use
+                        class="adress-icon"
+                        href="./img/symbol-defs.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="32" height="32">
+                      <use
+                        class="adress-icon"
+                        href="./img/symbol-defs.svg#icon-inst"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </address>
 
@@ -244,6 +324,7 @@
         </div>
       </footer>
 
+      <!-- Модальне вікно -->
       <div class="backdrop is-hidden">
         <div class="modal">
           <div class="modal-in">
@@ -258,20 +339,60 @@
                 Запишіться <span> безкоштовно</span> та отримайте подарунок
               </p>
 
-              <div class="modal-container">
-                <p class="mod-write">Ваше ім'я та прізвище</p>
-                <p class="mod-write">Ваш номер телефону</p>
-                <p class="mod-write">Ваша електронна пошта</p>
-              </div>
-              <div class="m-butplinf">
-                <button class="m-button" type="button">
-                  Записатись безкоштовно
-                </button>
-                <p class="conf">
-                  Натискаючи на кнопку я погоджуюсь з
-                  <span class="conf-span">політикою конфіденційності </span>
-                </p>
-              </div>
+              <form
+                class="modal-container"
+                name="contact-form"
+                autocomplete="on"
+                novalidate
+              >
+                <div class="label-form-div">
+                  <input
+                    id="user-name"
+                    name="user-name"
+                    class="mod-write"
+                    type="text"
+                  />
+                  <label class="form-label" for="user-name">
+                    Ваше ім'я та прізвище
+                  </label>
+                </div>
+
+                <div class="label-form-div">
+                  <input
+                    id="user-tel"
+                    name="user-tel"
+                    class="mod-write"
+                    type="tel"
+                  />
+                  <label class="form-label" for="user-tel">
+                    Ваш номер телефону
+                  </label>
+                </div>
+
+                <div class="label-form-div">
+                  <input
+                    id="user-email"
+                    name="user-email"
+                    class="mod-write"
+                    type="email"
+                  />
+                  <label class="form-label" for="user-email">
+                    Ваша електронна пошта
+                  </label>
+                </div>
+
+                <div class="m-butplinf">
+                  <button class="m-button" type="submit">
+                    Записатись безкоштовно
+                  </button>
+                  <p class="conf">
+                    Натискаючи на кнопку я погоджуюсь з
+                    <a class="link-conf" href="#">
+                      політикою конфіденційності
+                    </a>
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>

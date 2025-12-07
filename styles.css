@@ -92,6 +92,8 @@
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -99,6 +101,16 @@ h2 {
     font-weight: 700;
     font-size: 64px;
     color: var(--beauty-landing-2-c1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
 }
 
 span {
@@ -116,17 +128,19 @@ span {
     width: 100%;
 }
 
+
+
 /* Header */
 
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .header {
     display: flex;
     flex-direction: row;
-    background-color: var(--beauty-landing-2-background);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.25);
     height: 106px;
@@ -134,19 +148,22 @@ span {
     top: 0;
     left: 0 ;
     width: 100%;
-    padding-top: 32px ;
 }
 
 .nav {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-grow: 1;
 }
 
 .nav-q {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    justify-self: stretch;
+    gap: 56px;
+    width: 525px;
+    height: 21px;
 }
 
 .hero-titel-icon {
@@ -157,6 +174,15 @@ span {
     text-transform: capitalize;
     color: var(--beauty-landing-2-s2);
     text-decoration: unset;
+    margin: auto;
+}
+
+.icon-use {
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+    height: 32px;
+    justify-content: space-between;
 }
 
 .link {
@@ -164,7 +190,6 @@ span {
     font-weight: 400;
     font-size: 18px;
     color: var(--beauty-landing-2-c1);
-    margin: 56px;
     text-decoration: unset;
     transition: color 0.3s;
 }
@@ -256,11 +281,12 @@ span {
 /* Перевтілюйтесь в beauty zone ! */
 
 .span-name {
-    color: var(--color-brand);
+    color: var(--beauty-landing-2-s2);
     text-transform: capitalize;
 }
 
 .check {
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 22px;
     line-height: 173%;
@@ -276,20 +302,21 @@ span {
  /* Чому люди обирають нас  */
 
  .why-people-choosing {
-    background-image: linear-gradient(#2b7fff 33.47%, rgba(43, 127, 255, 0) 63.46%, rgba(43, 127, 255, 0) 89.47%);
+    background-image: linear-gradient(#2b80ff42 20%, rgba(43, 127, 255, 0) 63.46%, rgba(43, 127, 255, 0) 89.47%);
     
  }
 
  .choose-blocks {
     display: flex;
     flex-direction: row; 
+    justify-content: center;
+    gap: 56px;
 }
 
  .why-choosing {
-    margin: 56px;
+    padding: 24px 32px;
     border-radius: 32px;
     width: 316px;
-    height: 181px;
     box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
     background: var(--beauty-landing-2-background);
  }
@@ -335,6 +362,7 @@ span {
 .carusl-button:hover {
     border: 1px solid var(--beauty-landing-2-background);
     background-color: #2b7fff;
+    color: var(--beauty-landing-2-background);
 }
 
 .rigth {
@@ -427,7 +455,7 @@ span {
     width: 422px;
     height: 482px;
     background: var(--beauty-landing-2-c1);
-    padding: 32px;
+    padding: 50px 45px;
     box-shadow: -5px 0 0 0 #fff, -10px 0 0 0 var(--beauty-landing-2-c6)
 }
 
@@ -492,6 +520,13 @@ footer {
     color: var(--beauty-landing-2-s2);
 }
 
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .footer-nav-address {
     font-family: var(--font-family);
     font-weight: 400;
@@ -519,7 +554,9 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 56px;
 }
 
 .adress-footer {
@@ -600,8 +637,6 @@ footer::after {
     right: 40px;
 }
 
-
-
 .m-h {
     margin: 40px 0px;
     font-family: var(--third-family);
@@ -629,9 +664,10 @@ footer::after {
 }
 
 .mod-write {
-    margin: 12px 0px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    border: 2px solid var(--beauty-landing-2-s5);
     justify-content: center;
     font-family: var(--font-family);
     font-weight: 400;
@@ -639,15 +675,56 @@ footer::after {
     color: var(--beauty-landing-2-background);
     border-radius: 32px;
     border-color: var(--beauty-landing-2-c3);
+    width: 100%;
+    height: 52px;
+    background-color: transparent;
+    
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--beauty-landing-2-background);
+
     width: 310px;
     height: 52px;
+    padding: 18px 32px;
+}
 
-    border: 2px solid var(--beauty-landing-2-s5);
-    border-radius: 32px;
+.mod-write:focus {
+    background: var(--beauty-landing-2-s5);
+    outline: none;
+}
+
+.label-class {
+    margin: 24px 0px;
+}
+
+.label-form-div {
+    position: relative;
+    margin-bottom: 16px;
     width: 310px;
     height: 52px;
 }
 
+.form-label {
+    position: absolute;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.17;
+    color: var(--beauty-landing-2-background);
+    transform: translate(35px, -35px);
+    transition: transform 0.3s;
+}
+
+.mod-write:focus + .form-label {
+    transform: translate(10px, -75px);
+}
+
+.m-butplinf {
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 .m-button {
     margin: 0 auto;
@@ -678,16 +755,21 @@ footer::after {
     text-decoration-skip-ink: none;
 }
 
-.m-butplinf {
-    width: 275px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
 .modal-btn-close {
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
 }
+
+.link-conf {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--beauty-landing-2-s5);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
