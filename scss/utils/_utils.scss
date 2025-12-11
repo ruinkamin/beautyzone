@@ -1,0 +1,21 @@
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* main */
+.titel-name {
+    text-align: center;
+}
+
+.span-name {
+    color: var(--beauty-landing-2-s2);
+    text-transform: capitalize;
+}
+
+.span-bold {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--beauty-landing-2-c1);
+}

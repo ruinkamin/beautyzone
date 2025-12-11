@@ -1,0 +1,10 @@
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* main */
+.titel-name {
+  text-align: center;
+}/*# sourceMappingURL=utils.css.map */

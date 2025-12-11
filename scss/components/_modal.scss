@@ -1,0 +1,239 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: lab(0% 0 0 / 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+
+.modal {
+    padding: 42px 144px;
+    position: relative;
+    border-radius: 48px;
+    width: 100%;
+    max-width: 723px;
+    max-height: 681px;
+    height: 100%;
+    overflow: auto;
+
+    background: var(--beauty-landing-2-c1);
+}
+
+.modal-in {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 435px;
+    width: 100%;
+}
+
+.modal-doublein {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 310px;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.m-h {
+    margin: 40px 0px;
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+}
+
+.sign-free-t {
+    margin: 32px 0px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 0px;
+}
+
+.mod-write {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--beauty-landing-2-s5);
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--beauty-landing-2-background);
+    border-radius: 32px;
+    border-color: var(--beauty-landing-2-c3);
+    width: 100%;
+    height: 52px;
+    background-color: transparent;
+
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--beauty-landing-2-background);
+
+    width: 310px;
+    height: 52px;
+    padding: 18px 32px;
+}
+
+.mod-write:focus {
+    background: var(--beauty-landing-2-s5);
+    outline: none;
+}
+
+.mod-write:focus+.form-label {
+    transform: translate(10px, -75px);
+}
+
+.mod-write:not(:focus) .form-label {
+    opacity: 1;
+}
+
+/* 
+.mod-write:placeholder-shown {
+    background-color: #ff6e9f;
+}
+
+.mod-write:required {
+    border-color: var(--dog-landing-3-c10);
+} */
+
+
+.label-class {
+    margin: 24px 0px;
+}
+
+.label-form-div {
+    position: relative;
+    margin-bottom: 16px;
+    width: 310px;
+    height: 52px;
+}
+
+.form-label {
+    position: absolute;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.17;
+    color: var(--beauty-landing-2-background);
+    transform: translate(35px, -35px);
+    transition: transform 0.3s;
+}
+
+.checkbox {
+    position: relative;
+}
+
+.checkbox-input {
+    appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: var(--beauty-landing-2-s2);
+}
+
+.checkbox-label::before {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: '';
+    border: 1px solid var(--dog-landing-3-c6);
+    border-radius: 2px;
+    margin-top: 5px;
+    left: 0;
+    top: 0;
+}
+
+.checkbox-label {
+    color: var(--beauty-landing-2-background);
+    padding-left: 24px;
+}
+
+.m-butplinf {
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-button {
+    margin: 0 auto;
+    margin-top: 24px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    width: 281px;
+    height: 53px;
+    background: var(--beauty-landing-2-s2);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--beauty-landing-2-background);
+    border-color: transparent;
+    cursor: pointer;
+}
+
+/* .m-button:disabled {
+    background: var(--dog-landing-3-c6);
+    cursor: not-allowed;
+} */
+
+.conf {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--beauty-landing-2-s5);
+    margin-top: 8px;
+}
+
+.conf-span {
+    color: var(--beauty-landing-2-s5);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.modal-btn-close {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.link-conf {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--beauty-landing-2-s5);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}

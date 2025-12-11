@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--beauty-landing-2-c1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+span {
+    color: var(--beauty-landing-2-s2);
+}
+
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1288px;
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+}

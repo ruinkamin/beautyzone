@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
 
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./scss/main.min.css" />
   </head>
 
   <body>
@@ -30,17 +30,17 @@
           <ul class="icon-use">
             <li>
               <svg width="32" height="32">
-                <use href="./img/symbol-defs.svg#icon-phone"></use>
+                <use href="./scss/img/symbol-defs.svg#icon-phone"></use>
               </svg>
             </li>
             <li>
               <svg width="32" height="32">
-                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                <use href="./scss/img/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </li>
             <li>
               <svg width="32" height="32">
-                <use href="./img/symbol-defs.svg#icon-inst"></use>
+                <use href="./scss/img/symbol-defs.svg#icon-inst"></use>
               </svg>
             </li>
           </ul>
@@ -73,18 +73,18 @@
               Перевтілюйтесь<br />
               в <span class="span-name">beauty zone!</span>
             </h2>
-            <p class="check">
+            <p class="reincarnate">
               Наша косметологічна клініка пропонує вам професійні послуги з
               догляду за шкірою обличчя та тіла.
             </p>
-            <p class="check">
+            <p class="reincarnate">
               B <span class="span-bold">beauty zone</span> ми гарантуємо найвищі
               стандарти якості та приємний сервіс. Наші косметологічні процедури
               та препарати допоможуть вам підтримувати свою красу та молодість.
               З нами краса назавжди!
             </p>
-            <img src="./img/face1.png" alt="skin before" />
-            <img src="./img/face2.png" alt="skin after" />
+            <img src="./scss/img/face1.png" alt="skin before" />
+            <img src="./scss/img/face2.png" alt="skin after" />
           </div>
         </section>
         <!-- Чому люди обирають нас -->
@@ -97,7 +97,7 @@
             <ul class="choose-blocks">
               <li class="why-choosing">
                 <svg width="48" height="48" class="choose-item">
-                  <use href="./img/symbol-defs.svg#icon-game"></use>
+                  <use href="./scss/img/symbol-defs.svg#icon-game"></use>
                 </svg>
                 <p class="list-block">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
@@ -106,7 +106,7 @@
               </li>
               <li class="why-choosing">
                 <svg width="48" height="48" class="choose-item">
-                  <use href="./img/symbol-defs.svg#icon-cosmetics"></use>
+                  <use href="./scss/img/symbol-defs.svg#icon-cosmetics"></use>
                 </svg>
                 <p class="list-block">
                   Використовуємо тільки професійне обладнання та косметику,
@@ -115,7 +115,7 @@
               </li>
               <li class="why-choosing">
                 <svg width="48" height="48" class="choose-item">
-                  <use href="./img/symbol-defs.svg#icon-crown"></use>
+                  <use href="./scss/img/symbol-defs.svg#icon-crown"></use>
                 </svg>
                 <p class="list-block">
                   Наша мета - підкреслити переваги та приховати недоліки, a не
@@ -132,25 +132,40 @@
             <div class="procedures">
               <button class="carusl-button" type="button">
                 <svg width="16" height="16">
-                  <use href="./img/symbol-defs.svg#icon-Arrow"></use>
+                  <use href="./scss/img/symbol-defs.svg#icon-Arrow"></use>
                 </svg>
               </button>
               <article>
-                <div class="procedures-fir proc-class">
+                <img
+                  class="proc-img-fon"
+                  src="./scss/img/proc1.jpg"
+                  alt="Маски для обличч"
+                />
+                <div class="proc-class">
                   <div class="proc-text">
                     <p class="text-proc">Маски для обличчя</p>
                   </div>
                 </div>
               </article>
               <article>
-                <div class="procedures-sec proc-class">
+                <img
+                  class="proc-img-fon"
+                  src="./scss/img/proc2.jpg"
+                  alt="Ін'єкції для обличчя"
+                />
+                <div class="proc-class">
                   <div class="proc-text">
                     <p class="text-proc">Ін'єкції для обличчя</p>
                   </div>
                 </div>
               </article>
               <article>
-                <div class="procedures-thir proc-class">
+                <img
+                  class="proc-img-fon"
+                  src="./scss/img/proc3.jpg"
+                  alt="Очищення обличчя"
+                />
+                <div class="proc-class">
                   <div class="proc-text">
                     <p class="text-proc">Очищення обличчя</p>
                   </div>
@@ -158,7 +173,7 @@
               </article>
               <button class="carusl-button rigth" type="button">
                 <svg width="16" height="16">
-                  <use href="./img/symbol-defs.svg#icon-Arrow"></use>
+                  <use href="./scss/img/symbol-defs.svg#icon-Arrow"></use>
                 </svg>
               </button>
             </div>
@@ -290,7 +305,7 @@
                     <svg width="32" height="32">
                       <use
                         class="adress-icon"
-                        href="./img/symbol-defs.svg#icon-phone"
+                        href="./scss/img/symbol-defs.svg#icon-phone"
                       ></use>
                     </svg>
                   </li>
@@ -298,7 +313,7 @@
                     <svg width="32" height="32">
                       <use
                         class="adress-icon"
-                        href="./img/symbol-defs.svg#icon-facebook"
+                        href="./scss/img/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </li>
@@ -306,7 +321,7 @@
                     <svg width="32" height="32">
                       <use
                         class="adress-icon"
-                        href="./img/symbol-defs.svg#icon-inst"
+                        href="./scss/img/symbol-defs.svg#icon-inst"
                       ></use>
                     </svg>
                   </li>
@@ -324,13 +339,13 @@
         </div>
       </footer>
 
-      <!-- Модальне вікно is-hidden -->
-      <div class="backdrop">
+      <!-- Модальне вікно-->
+      <div class="backdrop is-hidden">
         <div class="modal">
           <div class="modal-in">
             <button class="modal-btn-close" type="button">
               <svg width="32" height="32">
-                <use href="./img/symbol-defs.svg#icon-icon"></use>
+                <use href="./scss/img/symbol-defs.svg#icon-icon"></use>
               </svg>
             </button>
             <h2 class="m-h">Замовити дзвінок</h2>

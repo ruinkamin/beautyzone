@@ -1,0 +1,34 @@
+.why-people-choosing {
+    background-image: linear-gradient(#2b80ff42 20%, rgba(43, 127, 255, 0) 63.46%, rgba(43, 127, 255, 0) 89.47%);
+
+}
+
+.choose-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 56px;
+}
+
+.why-choosing {
+    padding: 24px 32px;
+    border-radius: 32px;
+    width: 316px;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+    background: var(--beauty-landing-2-background);
+}
+
+.list-block {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: #000;
+    margin: 24px 32px;
+}
+
+.choose-item {
+    display: flex;
+    margin: 0 auto;
+}

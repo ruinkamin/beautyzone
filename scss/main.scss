@@ -1,0 +1,43 @@
+@import './utils/fonts';
+@import './utils/variables';
+
+@import './base';
+
+@import './utils/utils.scss';
+
+// @import './utils/mixins';
+
+// .circle {
+//     @include circle(100px, 100px, white);
+// }
+
+// .circle-big {
+//     @include circle(200px, 200px, green);
+// }
+
+
+
+/* Header */
+@import './components/header';
+
+/* beauty zone */
+@import './components/hero-section';
+
+/* Перевтілюйтесь в beauty zone ! */
+@import './components/reincarnate';
+
+/* Чому люди обирають нас  */
+@import './components/why-choosing';
+
+/* Наші процедури */
+@import './components/procedures';
+
+/* Як нас знайти */
+@import './components/find';
+
+
+/* footer */
+@import './components/fooret';
+
+/* Modal */
+@import './components/modal';
