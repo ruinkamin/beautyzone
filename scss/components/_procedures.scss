@@ -52,8 +52,13 @@
     color: var(--beauty-landing-2-background);
 }
 
-article {
+.proc-windows:hover {
     position: relative;
+    transform: scale(1.1);
+}
+
+.proc-windows {
+    transition: transform 0.3s ease;
 }
 
 .proc-img-fon {
@@ -68,17 +73,11 @@ article {
     width: 344px;
     height: 456px;
     border-radius: 4px 120px;
-    transition: transform 0.3s;
     z-index: -1;
 }
 
-.proc-img-fon:hover {
-    transform: scale(1.05);
-}
-
 .proc-class {
-    background-color: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%);
-    
+    background: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
@@ -89,10 +88,4 @@ article {
     align-items: flex-end;
     justify-content: center;
     border-radius: 4px 120px;
-    transition: transform 0.3s;
-
-}
-
-.proc-class:hover {
-    transform: scale(1.05);
 }
