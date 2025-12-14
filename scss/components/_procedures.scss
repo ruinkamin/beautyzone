@@ -53,11 +53,13 @@
 }
 
 .proc-windows:hover {
-    position: relative;
-    transform: scale(1.1);
+    transform: scale(0.5);
 }
 
 .proc-windows {
+    position: relative;
+    -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 

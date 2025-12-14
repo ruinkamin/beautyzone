@@ -25,9 +25,9 @@
 .nav-q {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    justify-self: stretch;
+    justify-content: center;
     gap: 56px;
+    flex-grow: 1;
     width: 525px;
     height: 21px;
 }
@@ -40,7 +40,6 @@
     text-transform: capitalize;
     color: var(--beauty-landing-2-s2);
     text-decoration: unset;
-    margin: auto;
 }
 
 .icon-use {

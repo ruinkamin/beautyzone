@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
 
+    <!-- Normalize (через CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Ваші стилі — після normalize, щоб вони мали пріоритет -->
+    <link rel="stylesheet" href="./styles.css" />
+
     <link rel="stylesheet" href="./scss/main.min.css" />
   </head>
 
@@ -97,7 +106,7 @@
             <ul class="choose-blocks">
               <li class="why-choosing">
                 <svg width="48" height="48" class="choose-item">
-                  <use href="./scss/img/symbol-defs.svg#icon-game"></use>
+                  <use href="./img/symbol-defs.svg#icon-game"></use>
                 </svg>
                 <p class="list-block">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
@@ -106,7 +115,7 @@
               </li>
               <li class="why-choosing">
                 <svg width="48" height="48" class="choose-item">
-                  <use href="./scss/img/symbol-defs.svg#icon-cosmetics"></use>
+                  <use href="./img/symbol-defs.svg#icon-cosmetics"></use>
                 </svg>
                 <p class="list-block">
                   Використовуємо тільки професійне обладнання та косметику,
@@ -115,7 +124,7 @@
               </li>
               <li class="why-choosing">
                 <svg width="48" height="48" class="choose-item">
-                  <use href="./scss/img/symbol-defs.svg#icon-crown"></use>
+                  <use href="./img/symbol-defs.svg#icon-crown"></use>
                 </svg>
                 <p class="list-block">
                   Наша мета - підкреслити переваги та приховати недоліки, a не
@@ -295,7 +304,8 @@
                     href="https://maps.app.goo.gl/PLLHdLu9GjCeGi829"
                     class="footer-nav-address"
                   >
-                    Україна, м. Київ, вул. Тараса Шевченка 5</a
+                    Україна, м. Київ,<br />
+                    вул. Тараса Шевченка 5</a
                   >
                 </li>
               </ul>
