@@ -1,47 +1,65 @@
-.hero {
-    width: 529px;
-    margin-left: 105px;
+.beauty-zone {
+    &__hero {
+        width: 529px;
+        margin-left: 105px;
+    }
+
+    &__bc-img {
+        background-image: linear-gradient(94deg, #fff 9.65%,
+                rgba(255, 255, 255, 0.85) 26.08%,
+                rgba(255, 255, 255, 0.19) 52.74%,
+                rgba(255, 255, 255, 0) 74.46%),
+            url('..');
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;
+        background-attachment: scroll;
+        width: 100%;
+        height: 100%;
+        /* background: url('./img/bc-sec1.jpg') no-repeat righttop cover fixed; */
+    
+    }
+
+    &__cosm-cl {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--beauty-landing-2-c1);
+        margin-top: 120px;
+    }
+
+    &__hero-titel {
+        font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 140px;
+        line-height: 81%;
+        margin: 16px 0px;
+        text-transform: capitalize;
+        color: var(--beauty-landing-2-s2);
+    }
+
+    &__butt-text {
+        width: 238px;
+        height: 103px;
+        margin: 40px 0px;
+        text-align: center;
+    }
+
+    &__free-consultaition {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--beauty-landing-2-c3);
+    }
 }
 
-.bc-img {
-    background-image: linear-gradient(94deg, #fff 9.65%,
-            rgba(255, 255, 255, 0.85) 26.08%,
-            rgba(255, 255, 255, 0.19) 52.74%,
-            rgba(255, 255, 255, 0) 74.46%),
-        url('..');
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: cover;
-    background-attachment: scroll;
+.section-class {
     width: 100%;
-    height: 100%;
-    /* background: url('./img/bc-sec1.jpg') no-repeat righttop cover fixed; */
-
-}
-
-.cosm-cl {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--beauty-landing-2-c1);
-    margin-top: 120px;
-}
-
-.hero-titel {
-    font-family: var(--third-family);
-    font-weight: 700;
-    font-size: 140px;
-    line-height: 81%;
-    margin: 16px 0px;
-    text-transform: capitalize;
-    color: var(--beauty-landing-2-s2);
-}
-
-.butt-text {
-    width: 238px;
-    height: 103px;
-    margin: 40px 0px;
-    text-align: center;
+    margin: 0 auto;
+    max-width: 1288px;
+    padding: 24px;
 }
 
 .call-button {
@@ -56,14 +74,4 @@
     color: var(--beauty-landing-2-background);
     border-style: hidden;
     cursor: pointer;
-}
-
-
-.free-consultaition {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--beauty-landing-2-c3);
 }

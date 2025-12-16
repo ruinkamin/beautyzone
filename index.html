@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
 
-    <!-- Normalize (через CDN) -->
+    <!-- Normalize (через CDN) скидання шрифтів за замовчуванням-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -21,13 +21,13 @@
   <body>
     <div>
       <header class="header">
-        <div class="header-container main-container">
-          <nav class="nav">
-            <a class="hero-titel-icon" href="./index.html">
+        <div class="header__container main-container">
+          <nav class="header__nav">
+            <a class="header__hero-titel-icon" href="./index.html">
               Beauty <br />
               Zone</a
             >
-            <ul class="nav-q">
+            <ul class="header__nav-q">
               <li><a class="link" href="" target="_blank">Чому ми</a></li>
               <li>
                 <a class="link" href="" target="_blank">Наші процедури</a>
@@ -36,7 +36,7 @@
               <li><a class="link" href="" target="_blank">Про нас</a></li>
             </ul>
           </nav>
-          <ul class="icon-use">
+          <ul class="header__icon-use">
             <li>
               <svg width="32" height="32">
                 <use href="./img/symbol-defs.svg#icon-phone"></use>
@@ -58,16 +58,16 @@
 
       <main>
         <!-- beauty zone -->
-        <div class="bc-img">
+        <div class="beauty-zone__bc-img">
           <section class="beauty-zone section-class">
-            <div class="hero">
-              <p class="cosm-cl">Косметологічна клініка</p>
-              <h1 class="hero-titel">beauty zone</h1>
-              <div class="butt-text">
+            <div class="beauty-zone__hero">
+              <p class="beauty-zone__cosm-cl">Косметологічна клініка</p>
+              <h1 class="beauty-zone__hero-titel">beauty zone</h1>
+              <div class="beauty-zone__butt-text">
                 <button class="call-button modal-btn-open" type="button">
                   Замовити дзвінок
                 </button>
-                <p class="free-consultaition">
+                <p class="beauty-zone__free-consultaition">
                   Запишись та отримай безкоштовну консультацію нашого
                   косметолога
                 </p>
@@ -103,30 +103,42 @@
               Чому люди <br />
               <span>обирають нас</span>
             </h2>
-            <ul class="choose-blocks">
-              <li class="why-choosing">
-                <svg width="48" height="48" class="choose-item">
+            <ul class="why-people-choosing__choose-blocks">
+              <li class="why-people-choosing__why-choosing">
+                <svg
+                  width="48"
+                  height="48"
+                  class="why-people-choosing__choose-item"
+                >
                   <use href="./img/symbol-defs.svg#icon-game"></use>
                 </svg>
-                <p class="list-block">
+                <p class="why-people-choosing__list-block">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </p>
               </li>
-              <li class="why-choosing">
-                <svg width="48" height="48" class="choose-item">
+              <li class="why-people-choosing__why-choosing">
+                <svg
+                  width="48"
+                  height="48"
+                  class="why-people-choosing__choose-item"
+                >
                   <use href="./img/symbol-defs.svg#icon-cosmetics"></use>
                 </svg>
-                <p class="list-block">
+                <p class="why-people-choosing__list-block">
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
                 </p>
               </li>
-              <li class="why-choosing">
-                <svg width="48" height="48" class="choose-item">
+              <li class="why-people-choosing__why-choosing">
+                <svg
+                  width="48"
+                  height="48"
+                  class="why-people-choosing__choose-item"
+                >
                   <use href="./img/symbol-defs.svg#icon-crown"></use>
                 </svg>
-                <p class="list-block">
+                <p class="why-people-choosing__list-block">
                   Наша мета - підкреслити переваги та приховати недоліки, a не
                   переробити
                 </p>
@@ -139,48 +151,51 @@
           <div>
             <h2 class="titel-name">Наші <span>процедури</span></h2>
             <div class="procedures">
-              <button class="carusl-button" type="button">
+              <button class="procedures__carusl-button" type="button">
                 <svg width="16" height="16">
                   <use href="./img/symbol-defs.svg#icon-Arrow"></use>
                 </svg>
               </button>
-              <article class="proc-windows">
+              <article class="procedures__proc-windows">
                 <img
-                  class="proc-img-fon"
+                  class="procedures__proc-img-fon"
                   src="./img/proc1.jpg"
                   alt="Маски для обличч"
                 />
-                <div class="procedures-fir proc-class">
-                  <div class="proc-text">
-                    <p class="text-proc">Маски для обличчя</p>
+                <div class="procedures__proc-class">
+                  <div class="procedures__proc-text">
+                    <p class="procedures__text-proc">Маски для обличчя</p>
                   </div>
                 </div>
               </article>
-              <article class="proc-windows">
+              <article class="procedures__proc-windows">
                 <img
-                  class="proc-img-fon"
+                  class="procedures__proc-img-fon"
                   src="./img/proc2.jpg"
                   alt="Ін'єкції для обличчя"
                 />
-                <div class="proc-class">
-                  <div class="proc-text">
-                    <p class="text-proc">Ін'єкції для обличчя</p>
+                <div class="procedures__proc-class">
+                  <div class="procedures__proc-text">
+                    <p class="procedures__text-proc">Ін'єкції для обличчя</p>
                   </div>
                 </div>
               </article>
-              <article class="proc-windows">
+              <article class="procedures__proc-windows">
                 <img
-                  class="proc-img-fon"
+                  class="procedures__proc-img-fon"
                   src="./img/proc3.jpg"
                   alt="Очищення обличчя"
                 />
-                <div class="proc-class">
-                  <div class="proc-text">
-                    <p class="text-proc">Очищення обличчя</p>
+                <div class="procedures__proc-class">
+                  <div class="procedures__proc-text">
+                    <p class="procedures__text-proc">Очищення обличчя</p>
                   </div>
                 </div>
               </article>
-              <button class="carusl-button rigth" type="button">
+              <button
+                class="procedures__carusl-button procedures__rigth"
+                type="button"
+              >
                 <svg width="16" height="16">
                   <use href="./img/symbol-defs.svg#icon-Arrow"></use>
                 </svg>
@@ -268,24 +283,24 @@
 
       <footer class="footer container">
         <div class="section-class">
-          <div class="nav-f">
-            <a href="#" class="footername-link">
+          <div class="footer__nav-f">
+            <a href="#" class="footer__name-link">
               Beauty <br />
               zone</a
             >
             <nav>
-              <ul class="footer-list">
-                <li><a href="" class="footer-nav-address">Про нас</a></li>
-                <li><a href="" class="footer-nav-address">Чому ми</a></li>
+              <ul class="footer__list">
+                <li><a href="" class="footer__nav-address">Про нас</a></li>
+                <li><a href="" class="footer__nav-address">Чому ми</a></li>
                 <li>
-                  <a href="" class="footer-nav-address">Наші процедури</a>
+                  <a href="" class="footer__nav-address">Наші процедури</a>
                 </li>
-                <li><a href="" class="footer-nav-address">Контакти</a></li>
+                <li><a href="" class="footer__nav-address">Контакти</a></li>
               </ul>
             </nav>
 
-            <address class="adress-footer footer-list">
-              <ul class="ff footer-list">
+            <address class="footer__adress footer__list">
+              <ul class="footer__ff footer__list">
                 <li>
                   <a href="tel:380960000007" class="footer-nav-address">
                     + 38 (096) 000 00 07
@@ -294,7 +309,7 @@
                 <li>
                   <a
                     href="mailto:beautyzone@gmail.com"
-                    class="footer-nav-address"
+                    class="footer__nav-address"
                   >
                     beautyzone@gmail.com
                   </a>
@@ -302,7 +317,7 @@
                 <li>
                   <a
                     href="https://maps.app.goo.gl/PLLHdLu9GjCeGi829"
-                    class="footer-nav-address"
+                    class="footer__nav-address"
                   >
                     Україна, м. Київ,<br />
                     вул. Тараса Шевченка 5</a
@@ -340,7 +355,7 @@
             </address>
 
             <div>
-              <a href="#" target="_blank" class="footer-nav-address"
+              <a href="#" target="_blank" class="footer__nav-address"
                 >Політика конфіденційності</a
               >
               <p class="data">&copy; 2022 Дані захищені</p>

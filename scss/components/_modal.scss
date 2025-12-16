@@ -1,5 +1,4 @@
 .backdrop {
-    z-index: 3;
     position: fixed;
     top: 0;
     right: 0;
@@ -147,34 +146,34 @@
     transition: transform 0.3s;
 }
 
-// .checkbox {
-//     position: relative;
-// }
+.checkbox {
+    position: relative;
+}
 
-// .checkbox-input {
-//     appearance: none;
-// }
+.checkbox-input {
+    appearance: none;
+}
 
-// .checkbox-input:checked + .checkbox-label::before {
-//     background-color: var(--beauty-landing-2-s2);
-// }
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: var(--beauty-landing-2-s2);
+}
 
-// .checkbox-label::before {
-//     position: absolute;
-//     width: 16px;
-//     height: 16px;
-//     content: '';
-//     border: 1px solid var(--dog-landing-3-c6);
-//     border-radius: 2px;
-//     margin-top: 5px;
-//     left: 0;
-//     top: 0;
-// }
+.checkbox-label::before {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: '';
+    border: 1px solid var(--dog-landing-3-c6);
+    border-radius: 2px;
+    margin-top: 5px;
+    left: 0;
+    top: 0;
+}
 
-// .checkbox-label {
-//     color: var(--beauty-landing-2-background);
-//     padding-left: 24px;
-// }
+.checkbox-label {
+    color: var(--beauty-landing-2-background);
+    padding-left: 24px;
+}
 
 .m-butplinf {
     width: 275px;
