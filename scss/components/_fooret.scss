@@ -117,5 +117,9 @@ footer::after {
     background-repeat: no-repeat;
     bottom: 0;
     right: 0;
+
+    @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
 }
 

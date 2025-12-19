@@ -10,16 +10,6 @@
     transform: translateX(100%);
     transition: transform 0.3s;
 
-    &::after {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 180px;
-        height: 240px;
-        background-image: url('../../images/bread-circle-words.png');
-        content: '';
-    }
-
     &.is-open {
         transform: translateX(0);
     }
@@ -32,8 +22,7 @@
         align-items: center;
         justify-content: center;
         padding: 0;
-        fill: transparent;
-        stroke: var(--beauty-landing-2-c1);
+        fill: var(--beauty-landing-2-c1);
         background-color: transparent;
         border: none;
         cursor: pointer;

@@ -10,9 +10,9 @@
     justify-content: center;
     padding: 20px 0px;
     transition: opacity 0.3s, visibility 0.3s;
+
+    z-index: 5;
 }
-
-
 
 .modal {
     padding: 42px 144px;
