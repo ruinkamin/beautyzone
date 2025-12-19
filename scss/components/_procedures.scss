@@ -1,8 +1,17 @@
 .procedures {
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    align-items: center;
+
+    &__slide {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        align-items: center;
+    }
+    
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__carusl-button {
         display: flex;
@@ -15,7 +24,11 @@
         border: 1px solid var(--beauty-landing-2-c1);
         border-radius: 50%;
         cursor: pointer;
-        fill: var(--beauty-landing-2-c1)
+        fill: var(--beauty-landing-2-c1);
+
+        @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
     }
 
     &__proc-windows {
@@ -87,7 +100,28 @@
     &__proc-windows:hover {
         transform: scale(1.1);
     }
+
 }
 
+.swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+}
 
+.swiper-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+}
 
+.swiper-slide {
+    display: block;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}

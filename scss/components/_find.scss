@@ -1,9 +1,19 @@
 .find {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 93px;
+    flex-direction: row;
+    margin-bottom: 48px;
+    gap: 32px;
+
+
+    @media screen and (max-width: $bp-desktop) {
+            flex-direction: column;
+        }
+
+    &__how-find {
+        margin-top: 96px;
+    }
 }
 
 .regisration {
@@ -24,7 +34,11 @@
     height: 482px;
     background: var(--beauty-landing-2-c1);
     padding: 50px 45px;
-    box-shadow: -5px 0 0 0 #fff, -10px 0 0 0 var(--beauty-landing-2-c6)
+    box-shadow: -5px 0 0 0 #fff, -10px 0 0 0 var(--beauty-landing-2-c6);
+
+    @media screen and (max-width: $bp-desktop) {
+            order: 1;
+        }
 }
 
 .map {
@@ -32,7 +46,14 @@
     border-radius: 32px;
     width: 605px;
     height: 482px;
-    padding: 16px 32px;
+
+    @media screen and (max-width: $bp-desktop) {
+        order: 2;
+        bottom: 0;
+        width: 100%;
+        height: 232px;
+        border-radius: 0px;
+    }
 }
 
 .signup-free {

@@ -14,6 +14,13 @@ h2 {
     font-weight: 700;
     font-size: 64px;
     color: var(--beauty-landing-2-c1);
+
+    @media screen and (max-width: $bp-desktop) {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 32px;
+            color: var(--beauty-landing-2-c1);
+        }
 }
 
 h1,
@@ -34,7 +41,11 @@ span {
     width: 100%;
     margin: 0 auto;
     max-width: 1288px;
-    padding: 24px;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .container {
@@ -71,3 +82,7 @@ a {
     text-decoration: none;
 }
 
+html,
+body {
+    overflow-x: auto;
+}

@@ -10,10 +10,18 @@
     width: 100%;
     z-index: 2;
 
+    @media screen and (max-width: $bp-desktop) {
+            background: none;
+            backdrop-filter: none;
+            position: absolute;
+        }
+
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        padding-left: 99px;
+        padding-right: 102px;
     }
 
     &__nav {
@@ -30,6 +38,10 @@
         flex-grow: 1;
         width: 525px;
         height: 21px;
+
+        @media screen and (max-width: $bp-desktop) {
+                display: none;
+            }
     }
 
     &__hero-titel-icon {
@@ -48,6 +60,23 @@
         width: 160px;
         height: 32px;
         justify-content: space-between;
+
+        @media screen and (max-width: $bp-desktop) {
+                display: none;
+            }
+    }
+
+    &__burger {
+        display: none;
+        
+        @media screen and (max-width: $bp-desktop) {
+            display: block;
+            margin: 16px;
+            fill: var(--beauty-landing-2-background);
+            background-color: transparent;
+            border-color: transparent;
+        }
+        
     }
 }
 

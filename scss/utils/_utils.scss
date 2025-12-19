@@ -7,6 +7,17 @@
 /* main */
 .titel-name {
     text-align: center;
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--beauty-landing-2-c1);
+
+    @media  screen and (max-width: $bp-desktop) {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
 }
 
 .span-name {

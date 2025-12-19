@@ -2,6 +2,11 @@
     position: relative;
     background: var(--beauty-landing-2-c1);
 
+    @media screen and (max-width: $bp-desktop) {
+            margin-bottom: 92px;
+        }
+
+
     &__name-link {
         font-family: var(--third-family);
         font-weight: 700;
@@ -9,21 +14,41 @@
         line-height: 87%;
         text-transform: capitalize;
         color: var(--beauty-landing-2-s2);
+
+        @media screen and (max-width: $bp-desktop) {
+                font-size: 16px;
+                line-height: 94%;
+                margin-bottom: 42px;
+            }
     }
 
     &__nav-f {
+        position: relative;
+
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         align-items: flex-start;
         margin: 56px;
+
+        @media screen and (max-width: $bp-desktop) {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        
+        @media screen and (max-width: $bp-desktop) {
+                align-items: center;
+                width: 178px;
+                gap: 16px;
+            }
     }
 
     &__nav-address {
@@ -31,10 +56,15 @@
         font-weight: 400;
         font-size: 16px;
         color: var(--beauty-landing-2-background);
+
     }
 
-    &__ff {
+    &__flist {
         padding: 0px;
+
+        @media screen and (max-width: $bp-desktop) {
+                display: none;
+            }
     }
 
     &__adress {
@@ -42,6 +72,17 @@
         flex-direction: column;
         align-items: left;
     }
+
+    &__data{
+
+        @media screen and (max-width: $bp-desktop) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+    }
+
 }
 
 .data {
@@ -54,6 +95,11 @@
 .icon-use {
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: $bp-desktop) {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
 }
 
 .adress-icon {
@@ -72,3 +118,4 @@ footer::after {
     bottom: 0;
     right: 0;
 }
+
