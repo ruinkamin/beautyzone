@@ -60,11 +60,57 @@
             </li>
           </ul>
 
-          <button class="header__burger" type="button">
-            <svg width="32" height="32">
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
               <use href="./img/symbol-defs.svg#icon-menu"></use>
             </svg>
           </button>
+        </div>
+
+        <!-- mobile-menu -->
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            <svg width="32" height="32">
+              <use href="./img/symbol-defs.svg#icon-icon"></use>
+            </svg>
+          </button>
+
+          <a class="mobile-menu__logo" href="./index.html">
+            Beauty <br />
+            Zone
+          </a>
+          <ul class="mobile-menu__list">
+            <li>
+              <a class="mobile-menu__link" href="#"> Про нас </a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#"> Чому ми </a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#">Наші процедури</a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__icon-use">
+            <li>
+              <svg width="32" height="32">
+                <use href="./img/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="32" height="32">
+                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="32" height="32">
+                <use href="./img/symbol-defs.svg#icon-inst"></use>
+              </svg>
+            </li>
+          </ul>
         </div>
       </header>
 
@@ -167,7 +213,10 @@
           <div class="procedures__col">
             <h2 class="titel-name">Наші <span>процедури</span></h2>
             <div class="procedures__slide">
-              <button class="procedures__carusl-button" type="button">
+              <button
+                class="procedures__carusl-button carousel-button.prev"
+                type="button"
+              >
                 <svg width="16" height="16">
                   <use href="./img/symbol-defs.svg#icon-Arrow"></use>
                 </svg>
@@ -266,7 +315,7 @@
               </div>
 
               <button
-                class="procedures__carusl-button procedures__rigth"
+                class="procedures__carusl-button procedures__rigth carousel-button.next"
                 type="button"
               >
                 <svg width="16" height="16">
@@ -552,8 +601,9 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

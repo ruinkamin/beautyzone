@@ -103,25 +103,4 @@
 
 }
 
-.swiper-wrapper {
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    align-items: center;
-}
 
-.swiper-container {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: center;
-}
-
-.swiper-slide {
-    display: block;
-    flex-shrink: 0;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
-}

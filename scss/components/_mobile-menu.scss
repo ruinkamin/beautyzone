@@ -1,0 +1,81 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 16px 24px;
+    background-color: var(--beauty-landing-2-background);
+    transform: translateX(100%);
+    transition: transform 0.3s;
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 180px;
+        height: 240px;
+        background-image: url('../../images/bread-circle-words.png');
+        content: '';
+    }
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        fill: transparent;
+        stroke: var(--beauty-landing-2-c1);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__logo {
+        font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 94%;
+        text-transform: capitalize;
+        color: var(--beauty-landing-2-s2);
+    }
+
+    &__list {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__link {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--beauty-landing-2-c1);
+        line-height: 1.5;
+        text-decoration: none;
+
+        &:hover {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--beauty-landing-2-s2);
+        }
+    }
+
+    &__icon-use {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        color: var(--beauty-landing-2-c1);
+        margin-top: 17px;
+    }
+}
