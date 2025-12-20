@@ -5,15 +5,42 @@
     font-size: 22px;
     line-height: 173%;
     color: var(--beauty-landing-2-c1);
+    
 
     @media screen and (max-width: $bp-desktop) {
             font-weight: 400;
             font-size: 18px;
         }
-}
 
-.reincarnate-img {
-    @media screen and (max-width: $bp-desktop) {
+    &__box {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__img {
+        position: relative;
+        width: 499px;
+    
+        @media screen and (max-width: $bp-desktop) {
             display: none;
         }
+    }
+
+    &__circles {
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
 }
+
+.circle--big {
+    top: 0;
+    left: 0;
+}
+
+.circle--small {
+    top: 200px;
+    left: 150px;
+}
+
