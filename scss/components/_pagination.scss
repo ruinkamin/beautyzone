@@ -16,6 +16,8 @@
     &__button:hover {
         background-color: var(--beauty-landing-2-s2);
     }
-        
-    
+
+    &__button--active {
+        background-color: var(--beauty-landing-2-s2);
+    }
 }
