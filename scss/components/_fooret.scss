@@ -30,7 +30,6 @@
         align-items: center;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 56px;
 
         @media screen and (max-width: $bp-desktop) {
                 flex-direction: column;
@@ -95,6 +94,7 @@
 .icon-use {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     @media screen and (max-width: $bp-desktop) {
             margin-top: 16px;
@@ -123,3 +123,9 @@ footer::after {
         }
 }
 
+.section-class {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1288px;
+    padding: 56px 24px;
+}
