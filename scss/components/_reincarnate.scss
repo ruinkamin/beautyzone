@@ -13,12 +13,13 @@
         }
 
     &__box {
+        position: relative;
         display: flex;
         align-items: flex-start;
     }
 
     &__img {
-        position: relative;
+        
         width: 499px;
     
         @media screen and (max-width: $bp-desktop) {
@@ -27,20 +28,44 @@
     }
 
     &__circles {
-        position: absolute;
         border-radius: 50%;
-        overflow: hidden;
     }
 
 }
 
-.circle--big {
-    top: 0;
-    left: 0;
-}
 
 .circle--small {
-    top: 200px;
-    left: 150px;
+    margin-left: 176px;
 }
 
+@keyframes rotateStar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.star-blue {
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: var(--beauty-landing-2-s2);
+    animation: rotateStar 10s linear infinite;
+
+    @media screen and (max-width: $bp-desktop) {
+        display: none;
+    }
+}
+
+.star {
+    position: absolute;
+    right: 40px;
+    animation: rotateStar 10s linear infinite;
+
+    @media screen and (max-width: $bp-desktop) {
+        display: none;
+    }
+}
